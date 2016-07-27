@@ -17,7 +17,7 @@ angular.module('gtec').controller('gCtrl',function ($scope) {
 
 angular.module('gtec').controller('g1Ctrl',function ($scope) {
     var $ctrl=this;
-    $ctrl.name="bonjour";
-    $ctrl.hass="menzah";
+    $ctrl.name="hassine";
+    $ctrl.hass="hmaied";
 });
 
