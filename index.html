@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="gtec" lang="fr">
+    
+    <head>
+    <style>[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+    }</style>
+    <meta charset="UTF-8">
+        <title>My first angular app</title>
+    </head>
+
+    <body ng-cloak="">
+
+    <div ng-controller="gCtrl as vm1">
+        <span ng-bind="none"></span>
+            <h1>{{vm1.name}}</h1>
+            <h1>{{vm1.ok}}</h1>
+            <input ng-model="vm1.ok"/>
+            <input ng-model="vm1.name"/>
+            <ul>
+            <li ng-repeat="l in vm1.list | orderBy:'age'">{{l.firstname}}{{l.lastname}}{{l.age}}{{l.adresse}}</li>
+            
+            </ul>
+
+    <div ng-controller="g1Ctrl as vm2">
+        <h1>{{vm2.name}}{{vm2.hass}}</h1>
+        
+        <input ng-model="vm2.hass"/>
+        <input ng-model="vm2.name"/>
+        <!--<pre>{{vm1.list}}</pre>-->
+        
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script> 
+    <script src="app/app.js"></script> 
+    </body>
+
+</html>
