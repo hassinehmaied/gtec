@@ -1,23 +1,8 @@
-angular.module('gtec', []);
+(function(){
 
-angular.module('gtec').controller('gCtrl',function ($scope) {
-    var $ctrl=this;
+angular.module('gtec', ['ngRoute']);
 
-    $ctrl.list = [
-    {firstname:'hassine'},
-    {lastname:'hmaied'},
-    {age:'43'},
-    {age:'26'},
-    {adresse:'kélibia'}
-    ];
+})();
 
-    $ctrl.name="salut";
-    $ctrl.ok="yes";
-});
 
-angular.module('gtec').controller('g1Ctrl',function ($scope) {
-    var $ctrl=this;
-    $ctrl.name="hassine";
-    $ctrl.hass="hmaied";
-});
 

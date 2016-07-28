@@ -1,0 +1,12 @@
+{
+  "name": "gtec",
+  "homepage": "https://github.com/hassinehmaied/gtec",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.x",
+    "angular-route": "^1.5.x",
+    "bootstrap": "^3.3.7"
+  }
+}
